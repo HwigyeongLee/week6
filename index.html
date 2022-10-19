@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+        <title></title>
+        <style type="text/css">
+                body{margin: 0px;
+                        padding: 0px;
+                        overflow: hidden;}
+                #Container{margin: 0px;
+                        padding: 0px;
+                        width: 100vw;
+                        height: 100vh;
+                        display: flex;
+                        flex-wrap: wrap;}
+                #Left{background: black;
+                        width: 50%;
+                        height: 100%;
+                        margin: 0;
+                        padding: 0;}
+                #Right{background: linear-gradient(0deg, skyblue, blue);
+                        width: 50%;
+                        height: 100%;
+                    	overflow: hidden;}
+                
+                #Calyx{width: 10%;
+                        height: auto;
+                        position: absolute;
+                        left: 71%;
+                        top: 28%;
+                    	 pointer-events: none;}
+                #Stem{width: 15%;
+                        height: auto;
+                        position: absolute;
+                        left: 65%;
+                        top: 30%;
+                    	pointer-events: none;}
+                
+                .Petal{width: 10%;
+                        height: auto;
+                        
+                        }
+                .a{position: absolute;
+                        left: 76%;
+                        top: 24%;}
+                .b{position: absolute;
+                        left: 78.5%;
+                        top: 28.2%;}
+            .c{position: absolute;
+                        left: 80%;
+                        top: 32%;}
+                .d{position: absolute;
+                        left: 80%;
+                        top: 35%;}
+                .e{position: absolute;
+                        left: 79%;
+                        top: 38%;}
+                .f{position: absolute;
+                        left: 76.5%;
+                        top: 37.5%;
+                        width: 5;
+                        height: auto;}
+                .g{position: absolute;
+                        left: 76.3%;
+                        top: 40%;
+                        width: 5%;
+                        height: auto;}
+                .h{position: absolute;
+                        left: 75.2%;
+                        top: 42%;
+                        width: 3%;
+                        height: auto;}
+                .i{position: absolute;
+                        left: 73.1%;
+                        top: 42%;
+                        width: 2.7%;
+                        height: auto;}
+                .j{position: absolute;
+                        left: 70.7%;
+                        top: 39%;
+                        width: 3.8%;
+                        height: auto;}
+                .k{position: absolute;
+                        left: 68%;
+                        top: 41%;
+                        width: 6%;
+                        height: auto;}
+                .l{position: absolute;
+                        left: 65%;
+                        top: 40%;
+                        width: 8%;
+                        height: auto;}
+                .m{position: absolute;
+                        left: 62%;
+                        top: 38%;
+                        width: 14%;
+                        height: auto;}
+                .n{position: absolute;
+                        left: 61%;
+                        top: 34%;
+                        width: 13%;
+                        height: auto;}
+                .o{position: absolute;
+                        left: 63%;
+                        top: 29.5%;
+                        width: 9%;
+                        height: auto;}
+                .p{position: absolute;
+                        left: 62.5%;
+                        top: 23.7%;
+                        width: 11%;
+                        height: auto;}
+                .q{position: absolute;
+                        left: 67%;
+                        top: 18%;
+                        width: 7%;
+                        height: auto;}
+                .r{position: absolute;
+                        left: 70%;
+                        top: 17%;
+                        width: 5%;
+                        height: auto;}
+                .s{position: absolute;
+                        left: 73%;
+                        top: 14%;
+                        width: 4%;
+                        height: auto;}
+                .t{position: absolute;
+                        left: 74.5%;
+                        top: 15%;
+                        width: 4%;
+                        height: auto;}
+                .u{position: absolute;
+                        left: 75%;
+                        top: 20%;
+                        width: 7%;
+                        height: auto;}
+
+                #Intro{height: 40%;
+                        text-align: center;}
+                
+                #result{
+                    position: absolute;
+                        top: 670px;
+                        left: 1050px;
+                    	}
+                h1{font-family: 'Nanum Myeongjo', serif;
+                	}
+                p{color: whitesmoke;
+                        position: absolute;
+                        font-size: 35px;
+                        left: 12.5vw;
+                        top: 20vh;
+                        text-align: center;
+                        margin: auto;
+                        font-family: 'Nanum Myeongjo', serif;}
+                #InputContainer{text-align: center;
+                        line-height: 5vh;}
+                input{width: 30vw;
+                        height: 5vh;
+                        border-radius: 50px;
+                        font-family: 'Nanum Myeongjo', serif;
+                        font-size: 1vw;
+                        border: none;
+                        padding-left: 1vw;
+                        outline-style: none;}
+                
+                #flowerContainer{
+                        width: 1500px;
+                        height: 900px;
+                        background: ;
+                        position: relative;
+                        left: -75%;
+                        top: 5%;
+                        z-index: 9999;
+                }
+                @keyframes drop{
+  				0%{opacity: 100}
+  				100%{opacity: 0;transform: translateY(700px)}
+				}
+				button{font-family: 'Nanum Myeongjo', serif;
+                        font-size: 38px;
+                        border: none;
+                        background: black;
+                        color: whitesmoke;
+                }
+				button:hover {
+   							font-weight: bolder;
+				}
+				button:active {
+   							font-weight: bolder;
+   							color: blue;
+				}
+        </style>
+</head>
+<body>
+        <div id="Container">
+                <div id="Left">
+                        <div id="Intro"><p>고민되는 일이 있나요?<br>
+                                꽃잎점이 미래를 점쳐줄거에요.</div>
+                        <div id="InputContainer">
+                                <form id="Form"><br><input type="text" placeholder="Ex) 좋아한다" id="Like"><br><br>
+                                <input type="text" placeholder="Ex) 안좋아한다" id="DontLike"><br><br><br><br>
+                                <button type="button" id="StartButt">START</button>
+                                </form>
+                        </div>
+                </div>
+                <div id="Right">
+                        <div id="flowerContainer">
+                                <div id="Falling"><img src="Stem.svg" id="Stem"></div>
+                                <div id="Falling"><img src="1.svg" class="Petal a "></div>
+                                <div id="Falling"><img src="2.svg" class="Petal b "></div>
+                                <div id="Falling"><img src="3.svg" class="Petal c "></div>
+                                <div id="Falling"><img src="4.svg" class="Petal d "></div>
+                                <div id="Falling"><img src="5.svg" class="Petal e "></div>
+                                <div id="Falling"><img src="6.svg" class="Petal f "></div>
+                                <div id="Falling"><img src="7.svg" class="Petal g "></div>
+                                <div id="Falling"><img src="8.svg" class="Petal h "></div>
+                                <div id="Falling"><img src="9.svg" class="Petal i "></div>
+                                <div id="Falling"><img src="10.svg" class="Petal j "></div>
+                                <div id="Falling"><img src="11.svg" class="Petal k "></div>
+                                <div id="Falling"><img src="12.svg" class="Petal l "></div>
+                                <div id="Falling"><img src="13.svg" class="Petal m "></div>
+                                <div id="Falling"><img src="14.svg" class="Petal n "></div>
+                                <div id="Falling"><img src="15.svg" class="Petal o "></div>
+                                <div id="Falling"><img src="16.svg" class="Petal p "></div>
+                                <div id="Falling"><img src="17.svg" class="Petal q "></div>
+                                <div id="Falling"><img src="18.svg" class="Petal r "></div>
+                                <div id="Falling"><img src="19.svg" class="Petal s "></div>
+                                <div id="Falling"><img src="20.svg" class="Petal t "></div>
+                                <div id="Falling"><img src="21.svg" class="Petal u "></div>
+                                <div id="Falling"><img src="Calyx.svg" id="Calyx">
+                            </div>
+                                <h1 id="result"></h1>
+                        
+                </div>
+</div>
+
+        <script type="text/javascript">
+
+                let a = document.getElementsByClassName("Petal");
+                let count = 0;
+
+                for(let i=0; i<a.length; i++){
+                        a[i].onclick = function(){
+                                this.style.animation = "drop 2s ease forwards";
+
+                                count++;
+                                // console.log(count);
+
+                                if(count%2 == 0){
+                                        result.innerHTML = Like.value;
+
+                                }else{
+                                        result.innerHTML = DontLike.value;
+                                }
+                        }
+                }                      
+                
+                
+        </script>
+</body>
+</html>
